@@ -19,7 +19,7 @@ const Register = () => {
         e.preventDefault()
 
         try {
-            const { data } = await axios.post("http://localhost:8080/api/v1/user/register", {
+            const { data } = await axios.post("https://backend-3b0e.onrender.com/api/v1/user/register", {
                 name: user.name,
                 email: user.email,
                 password: user.password

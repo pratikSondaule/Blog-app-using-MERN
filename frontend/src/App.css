@@ -1,0 +1,72 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+}
+
+.nav-item {
+    margin: 0 12px;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+.box {
+    width: 40vw;
+    height: auto;
+    padding: 50px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: rgb(149, 148, 148) 0px 7px 29px 0px;
+}
+
+.card {
+    margin: 15px auto;
+    /* border: 0px; */
+}
+
+.card-img-top {
+    margin: auto;
+    width: 60vw;
+    height: 60vh;
+    background-position: center;
+}
+
+.icons {
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.edit,
+.delete {
+    margin: 0 12px;
+}
+
+.edit {
+    color: #0d6efd;
+}
+
+.delete {
+    color: #dc3545;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 70vw;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .box {
+        width: 70vw;
+        height: auto;
+    }
+}

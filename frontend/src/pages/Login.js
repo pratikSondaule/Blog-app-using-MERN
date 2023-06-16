@@ -26,7 +26,7 @@ const Login = () => {
       })
 
       if (res.status === 200) {
-        localStorage.setItem("userID", data?.user?._id);
+        localStorage.setItem("userID", res?.data?.user?._id);
         dispatch({ type: "USER", payload: true })
         alert("Login successfully");
         navigate("/blogs")

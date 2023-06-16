@@ -19,7 +19,7 @@ const Register = () => {
         e.preventDefault()
 
         try {
-            const res = await axios.post("https://blogapp-o0qw.onrender.com/api/v1/user/register", {
+            const res = await axios.post("https://blogapp-px2x.onrender.com/api/v1/user/register", {
                 name: user.name,
                 email: user.email,
                 password: user.password

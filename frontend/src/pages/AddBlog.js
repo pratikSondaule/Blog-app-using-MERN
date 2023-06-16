@@ -22,7 +22,7 @@ const AddBlog = () => {
     const addBlog = async (e) => {
         e.preventDefault()
         try {
-            const { data } = await axios.post("https://blogapp-o0qw.onrender.com/api/v1/blog/create-blog", {
+            const { data } = await axios.post("https://blogapp-px2x.onrender.com/api/v1/blog/create-blog", {
                 title: inputs.title,
                 description: inputs.description,
                 image: inputs.image,

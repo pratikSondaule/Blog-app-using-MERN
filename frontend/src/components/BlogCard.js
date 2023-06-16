@@ -17,7 +17,7 @@ const BlogCard = ({
 
     const handleDelete = async () => {
         try {
-            const { data } = await axios.delete(`https://blogapp-o0qw.onrender.com/api/v1/blog/delete-blog/${id}`)
+            const { data } = await axios.delete(`https://blogapp-px2x.onrender.com/api/v1/blog/delete-blog/${id}`)
             if (data) {
                 alert("Blog Deleted");
                 window.location.reload();

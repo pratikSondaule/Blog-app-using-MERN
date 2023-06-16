@@ -1,5 +1,6 @@
-/blogs        /blogs.html
-/my-blogs     /my-blogs.html
-/add-blog     /add-blog.html
-/login        /login.html
-/register     /register.html
+/blogs        /index.html   200
+/my-blogs     /index.html   200
+/add-blog     /index.html   200
+/login        /index.html   200
+/register     /index.html   200
+

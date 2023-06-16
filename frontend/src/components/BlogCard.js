@@ -20,7 +20,7 @@ const BlogCard = ({
             const { data } = await axios.delete(`https://blogapp-px2x.onrender.com/api/v1/blog/delete-blog/${id}`)
             if (data) {
                 alert("Blog Deleted");
-                navigate("/blogs")
+                window.location.reload();
             }
         } catch (error) {
             console.log(error);

@@ -20,16 +20,20 @@ const Login = () => {
     e.preventDefault()
 
     try {
-      const { data } = await axios.post("https://blogapp-p4w8.onrender.com/api/v1/user/login", {
+      const res = await axios.post("https://blogapp-p4w8.onrender.com/api/v1/user/login", {
         email: user.email,
         password: user.password
       })
 
-      if (data) {
+      if (res.status === 200) {
         localStorage.setItem("userID", data?.user?._id);
         dispatch({ type: "USER", payload: true })
         alert("Login successfully");
         navigate("/blogs")
+      } else if (res.status === 404) {
+        alert("User does not exist")
+      } else {
+        alert("Something went wrong")
       }
     } catch (error) {
       console.log(error);

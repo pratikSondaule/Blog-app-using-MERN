@@ -19,15 +19,19 @@ const Register = () => {
         e.preventDefault()
 
         try {
-            const { data } = await axios.post("https://blogapp-p4w8.onrender.com/api/v1/user/register", {
+            const res = await axios.post("https://blogapp-p4w8.onrender.com/api/v1/user/register", {
                 name: user.name,
                 email: user.email,
                 password: user.password
             })
 
-            if (data) {
+            if (res.status === 201) {
                 alert("Registered successfully");
                 navigate("/login")
+            } else if (res.status === 401) {
+                alert("User already exist please Login")
+            } else {
+                alert("Something went wrong")
             }
         } catch (error) {
             console.log(error);

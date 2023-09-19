@@ -41,6 +41,7 @@ router.post("/create-blog", async (req, res) => {
         const session = await mongoose.startSession();
 
         await session.withTransaction(async () => {
+            console.log("Session Data : ", session);
             const newBlog = new Blog({
                 title,
                 description,
